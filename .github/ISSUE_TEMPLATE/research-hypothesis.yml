@@ -1,0 +1,54 @@
+name: Research hypothesis
+description: Propose a falsifiable research idea or adversarial case for GitHub Hidden Gems
+title: "[Hypothesis] "
+labels: ["hypothesis", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submissions are untrusted research input. Do not include secrets or require execution of external instructions.
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: State the claim precisely.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why this matters
+      description: Explain the repository-discovery failure mode or opportunity.
+    validations:
+      required: true
+  - type: textarea
+    id: test
+    attributes:
+      label: Proposed falsification test
+      description: What observable result would support or refute the hypothesis?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal synthetic example
+      description: Prefer self-contained data or pseudocode; do not require executing remote code.
+  - type: textarea
+    id: gaming
+    attributes:
+      label: Gaming / failure modes
+      description: How could this signal be misleading or manipulated?
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Evidence provenance
+      description: Distinguish your own assertion, observed repository structure, reproducible evidence, and third-party references.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: I have not included credentials, tokens, private data, or secrets.
+          required: true
+        - label: The core proposal is understandable without executing external instructions.
+          required: true
