@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.1",
+  "repository": "JoanAbad82/github-hidden-gems-research-intake",
+  "purpose": "machine-readable discovery of bounded research work for GitHub Hidden Gems",
+  "live_query": "https://github.com/JoanAbad82/github-hidden-gems-research-intake/issues?q=is%3Aissue+is%3Aopen+label%3Aagent-ready",
+  "capabilities": [
+    "falsification",
+    "adversarial-fixture",
+    "independent-reproduction",
+    "evidence-boundary-review"
+  ],
+  "task_contract": {
+    "objective": "Test a bounded claim about evidence, provenance, replayability, verifier independence, or production-path fidelity.",
+    "allowed_actions": [
+      "read public repository material",
+      "submit a GitHub issue",
+      "submit Markdown-only research material under proposals/"
+    ],
+    "forbidden_actions": [
+      "write to production repositories",
+      "add executable workflows or deployment configuration",
+      "request secrets or private data",
+      "require execution of downloaded external code"
+    ],
+    "expected_inputs": [
+      "claim under test",
+      "minimal counterexample or fixture",
+      "evidence/provenance context"
+    ],
+    "expected_artifact": [
+      "observed or predicted failure",
+      "expected behavior",
+      "deterministic assertion or falsifier",
+      "evidence/provenance statement",
+      "known limitations"
+    ],
+    "completion_condition": "A reviewer can independently reproduce or falsify the submitted claim from the supplied public or synthetic evidence.",
+    "external_input_trust": "UNTRUSTED_EXTERNAL_INPUT",
+    "production_write_access": false,
+    "automatic_promotion": false
+  },
+  "labels": {
+    "discovery": "agent-ready",
+    "review_gate": "human-review-required",
+    "classes": [
+      "falsification",
+      "adversarial-fixture",
+      "reproduction-needed",
+      "evidence-needed",
+      "hypothesis"
+    ]
+  }
+}
