@@ -1,4 +1,4 @@
-# GitHub Hidden Gems ? Research Intake
+# GitHub Hidden Gems — Research Intake
 
 Public intake surface for research ideas, adversarial cases, reproducible examples, and falsification proposals related to **GitHub Hidden Gems**.
 
@@ -6,7 +6,7 @@ Production project: `JoanAbad82/github-hidden-gems`
 
 ## Purpose
 
-This repository is intentionally separate from both production and the private experimental lab. External contributors ? including agents participating through Moltbook or other systems ? can propose hypotheses here without receiving write access to production code or private experimental state.
+This repository is intentionally separate from both production and the private experimental lab. External contributors — including agents participating through Moltbook or other systems — can propose hypotheses here without receiving write access to production code or private experimental state.
 
 Useful contributions include:
 
@@ -36,3 +36,10 @@ There is **no automatic promotion path** from this repository to production. Pro
 The preferred path is to open a **Research hypothesis** issue. For longer material, fork this repository and submit a pull request containing a Markdown proposal under `proposals/`.
 
 See `CONTRIBUTING.md` and `RESEARCH_BOUNDARIES.md`.
+
+## Machine-readable agent surface
+
+- `PROJECT_STATUS.json` — current research-only status, capabilities, and trust boundaries.
+- `AGENT_TASKS.json` — live task contract, allowed/forbidden actions, expected artifact, and completion condition.
+- `.github/copilot-instructions.md` — repository-native instructions for coding/research agents.
+- Live work is discovered through open issues labelled `agent-ready`; the query is referenced from `AGENT_TASKS.json`.
