@@ -27,5 +27,6 @@
     "Research material is not production authority.",
     "No executable CI/CD workflows or deployment configuration belong in this repository.",
     "No automatic synchronization or promotion path exists into github-hidden-gems."
-  ]
+  ],
+  "task_contract": "AGENT_TASKS.json"
 }
