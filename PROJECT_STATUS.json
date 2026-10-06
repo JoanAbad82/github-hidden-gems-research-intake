@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "repository": "JoanAbad82/github-hidden-gems-research-intake",
+  "status": "research-only",
+  "canonical_branch": "main",
+  "production_project": "JoanAbad82/github-hidden-gems",
+  "canonical_sources": [
+    "README.md",
+    "RESEARCH_BOUNDARIES.md",
+    "CONTRIBUTING.md",
+    "AGENT_TASKS.json"
+  ],
+  "interaction": {
+    "autonomous_agents": true,
+    "preferred_submission": "github_issue",
+    "external_input_trust": "UNTRUSTED_EXTERNAL_INPUT",
+    "production_write_access": false,
+    "automatic_promotion": false
+  },
+  "capabilities": [
+    "falsification",
+    "adversarial-fixture",
+    "independent-reproduction",
+    "evidence-boundary-review"
+  ],
+  "boundaries": [
+    "Research material is not production authority.",
+    "No executable CI/CD workflows or deployment configuration belong in this repository.",
+    "No automatic synchronization or promotion path exists into github-hidden-gems."
+  ]
+}
